@@ -28,3 +28,4 @@ Route::get('/espace-gestionnaire','GestController@index')->name('gest-home');
 //URLs pour la gestion des ressourcee
 Route ::resource('ouvrage', 'OuvrageController') ;
 Route ::resource('salle', 'SalleController') ;
+Route::get('/genre/{type}', 'MainController@genre')->name('genre');

@@ -21,13 +21,21 @@
     <hr class="break-small background-primary break-center">
     <div class="tabs background-primary-hightlight">
 
+      
+    @foreach ($types as $type)
+      <div class="tab-item tab-active">
+        <a href="{{route('genre' , ['type' => $type])}}" class="tab-label">{{$type}}</a>
+      </div>
 
+      @endforeach
 
       <div class="tab-item tab-active">
-        <a class="tab-label">...</a>
+        <a href="{{route('genre' , ['type' => 'tous'])}}" class="tab-label">Toutes catégories</a>
+      </div>
+    </div>
         <div class="tab-content lightbox-gallery">
-
-          @foreach ($leslivres as $livre)
+    lnn,lkln
+          @foreach ($livres as $livre)
 
           <div class="s-12 m-6 l-3">
             <a class="image-with-hover-overlay image-hover-zoom" href="{{asset('img/couvertures/livre.png')}}">
@@ -45,7 +53,6 @@
         @endforeach
         </div>
       </div>
-
 
     </div>
   </section>
