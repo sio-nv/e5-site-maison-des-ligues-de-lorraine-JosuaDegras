@@ -34,7 +34,7 @@
       </div>
     </div>
         <div class="tab-content lightbox-gallery">
-    lnn,lkln
+          
           @foreach ($livres as $livre)
 
           <div class="s-12 m-6 l-3">

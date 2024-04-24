@@ -12,10 +12,10 @@ jQuery(document).ready(function($) {
       var tab_url = $(this).attr('data-url');                   
       if ($(this).attr('data-url')) {        
         $(this).closest('.tab-item').attr("id", tab_url);
-        $(this).attr("href", "#" + tab_url);          
-      }else{                  
+        //$(this).attr("href", "#" + tab_url);          
+      //}else{                  
         $(this).closest('.tab-item').attr("id", "tab-" + (i + 1));
-        $(this).attr("href", "#tab-" + (i + 1));         
+        // $(this).attr("href", "#tab-" + (i + 1));         
       }
     });  
     $(this).prepend('<div class="tab-nav line"></div>');
