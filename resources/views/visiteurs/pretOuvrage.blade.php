@@ -3,8 +3,7 @@
 
 <!-- Commence ici le corps de la page -->
 @section('content')
-
-
+ <H1>Liste de prêt</H1>
 
 
 
