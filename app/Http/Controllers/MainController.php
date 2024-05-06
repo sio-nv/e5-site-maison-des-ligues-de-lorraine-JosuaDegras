@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Ouvrage;
+use App\Models\Emprunteur;
 
 
 class MainController extends Controller
@@ -47,5 +48,18 @@ class MainController extends Controller
 
         return view('visiteurs.ouvrages', ["types" => $tous_les_types , "livres" => $ouvrages]);
 
+    }
+
+    public function verifierNumero($numero)
+    {
+        $emprunteur = Emprunteur::where('numeroCarte', $numero)->first();
+
+        if ($emprunteur = 555) {
+            // Rediriger vers la vue si le client a emprunté des ouvrages
+            return view('visiteurs.pretOuvrage', ['emprunteur' => $emprunteur]);
+        } else {
+            // Rediriger vers la vue si le client n'a pas emprunté d'ouvrages
+            return view('visiteurs.aucunpret');
+        }
     }
 }

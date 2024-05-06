@@ -31,7 +31,7 @@
           <li><a>La bibliothèque</a>
             <ul>
               <li><a href="{{route('genre' , ['type' => 'tous'])}}">Parcourir les ouvrages</a>
-              <li><a href="">Gérer vos prêts</a></li>
+              <li><a href="{{route('cartes' , ['numero' => '555'])}}">Gérer vos prêts</a></li>
             </ul>
           </li>
           <li><a href="{{route('evenements')}}">Planning</a></li>

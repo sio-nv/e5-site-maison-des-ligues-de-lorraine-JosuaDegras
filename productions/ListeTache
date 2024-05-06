@@ -1,0 +1,9 @@
+1- Mise en place des 2 vues en utilisant le layout déjà mise en place pour la mise en page.
+
+2- Mise en place de la route parémtrer prenant en compte les numéros de carte utilisateur.
+
+3- Requête permettant un accès a la base pour récupérer en envoyer sur la vues créé
+
+4- Mise a jour de la fonction genre dans le MainController afin de pouvoir récupérer les Ouvrages
+
+5- 
